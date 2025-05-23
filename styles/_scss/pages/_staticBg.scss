@@ -1,0 +1,70 @@
+@import "../base/colors";
+
+.staticBackground {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url('/footerImag.png'); 
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  color: $white-f5f;
+  font-family: sans-serif;
+  text-align: center;
+
+   &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50%; // Adjust height for more or less shadow
+    background: repeating-linear-gradient(0deg, #092c38, #092c38b3 55%, #0000);
+    pointer-events: none; 
+    z-index: 1;
+  }
+
+  .textOverlay{
+    display: flex;
+    justify-content: space-around;
+    align-items: end;
+    padding-bottom: 2.5rem;
+    z-index: 2;
+    .branding{
+      max-width: 22vw;
+        img{
+             width: 20vw;
+        }
+        p{
+          white-space: nowrap;
+          font-size: 0.9vw;
+        }
+    }
+    .section{
+      display: flex;
+      align-items: start;
+      flex-direction: column;
+
+      h4{
+           margin-bottom: 2rem;
+           font-size: 1.2vw;
+        }
+
+      .descriptions{
+        display: flex;
+        gap:2rem;
+       
+        p{
+          text-align: start;
+          white-space: nowrap;
+         
+        }
+      }
+    }
+
+  }
+} 

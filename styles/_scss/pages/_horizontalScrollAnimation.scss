@@ -1,0 +1,52 @@
+@import '../base/colors';
+
+.horizontal-slide-wrapper{
+    position:relative;
+    height: 100vh;
+    font-family: var(--font-playfair);
+    .slide-container{
+        height: 100vh;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+
+        .slide-content{
+            display: flex;
+            will-change: transform;
+
+            .bg-image-wrapper{
+                width: 100vw;
+                height: 100vh;
+                position: relative;
+                flex-shrink: 0;
+                overflow: hidden;
+
+                .image-container{
+                    width: 100%;
+                    height: 100%;
+                    background-image: url('/bgSection.jpg');
+                    background-size: cover;
+                    background-position: center;
+                    transform-origin: center center;
+                }
+            }
+
+            .fixed-image-wrapper{
+                  width: 35vw;
+                    height: 100vh;
+                    position: relative;
+                    flex-shrink: 0;
+                    overflow: hidden;
+                    z-index:10;
+            }
+            .sec{
+                width: 100vw;
+                height: 100vh;
+                display: flex;
+                background-color: $green-222;
+                color:white;
+
+            }
+        }
+    }
+}

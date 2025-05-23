@@ -1,0 +1,21 @@
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  /* font-family: 'Seasons', 'Arial', sans-serif; */
+  font-family:'Arial', sans-serif;
+  background-color: #f8f8f8;
+
+    -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;     /* Firefox */
+  
+}
+/* @font-face {
+  font-family: 'Seasons'; 
+  src: url('/fonts/Seasons.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}  */

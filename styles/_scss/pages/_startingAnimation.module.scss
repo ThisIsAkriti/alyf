@@ -1,0 +1,105 @@
+@import '../base/colors';
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  z-index: 1000;
+}
+
+.leftHalf,
+.rightHalf {
+  width: 50%;
+  height: 100%;
+  position: relative;
+  background: black;
+  overflow: hidden;
+  display: flex;
+   font-style: italic;
+  align-items: center;
+
+}
+
+.leftText {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: $white;
+  font-size: 2rem;
+  margin: 0;
+  right: 40px;
+}
+
+
+.rightWrapper{
+   width: 60%;
+   height: 2.5rem;
+    position: relative; 
+    overflow: hidden;
+  .rightText {
+    position: absolute;
+    transform: translateY(-50%); 
+    top:2%;
+    color: $white;
+    font-size: 2rem;
+    margin: 0;
+    text-align: center;
+    left:40px;
+  }
+}
+
+
+
+
+
+.lineTop,
+.lineBottom {
+  position: absolute;
+  left: 50%;
+  width: 1px;
+  background: $white;
+  transform: translateX(-50%);
+  z-index: 1001;
+}
+
+.lineTop {
+  bottom: 50%;
+}
+
+.lineBottom {
+  top: 50%;
+}
+
+.keyholeContainer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1002;
+  width: 75px;  
+  height: 75px;
+}
+
+.keyopenImage {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 37px;  
+  height: 37px;
+  object-fit: contain;
+  z-index: 1;
+}
+
+.keyholeImage {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90px;  
+  height: 90px;
+  object-fit: contain;
+  z-index: 2;
+}

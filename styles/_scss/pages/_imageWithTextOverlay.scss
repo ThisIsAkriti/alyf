@@ -1,0 +1,58 @@
+@import '../base/colors';
+.hero-section-wrapper{
+    position: relative; 
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    .hero-text-overlay{
+        position: absolute;
+       pointer-events: none;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       z-index: 10;
+       width: 100%;
+
+       .heading-text-img{
+        margin-top: 20px;
+        display: flex;
+        .touch-text{
+            position: absolute;
+            right: 50px;
+             font-size: 16px;
+            background-color: $white;
+            padding:16px 18px;
+           
+        }
+        .menu-container{
+            background-color: $white;
+            position: absolute;
+            left:50px;
+            padding: 8px 15px;
+            z-index: 100;
+        }
+        
+       }
+        .text-wrapper{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: var(--font-playfair);
+            .center-text{
+                margin-top: 240px;
+                text-align: center;
+                font-size: 64px;
+            }
+            .explore-text{
+                font-size: 16px;
+                background-color: $white;
+                padding:16px 18px;
+               
+                margin-top: 24px;
+            }
+        }
+    }
+}

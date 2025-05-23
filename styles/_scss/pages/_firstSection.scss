@@ -1,0 +1,51 @@
+@import "../base/colors";
+.main-section-wrapper{
+    min-width: 80vw;
+    height: 100vh;
+    background: $green-222;
+    color: $white;
+    display: flex;
+    position: relative;
+    .inner-container{
+        width: 100%;
+        margin-left: 8rem;
+        z-index: 20;
+        .heading{
+            font-size:7vw;
+            font-family: var(--font-playfair);
+            margin:2rem 0;
+        }
+        .para,
+        .end-text{
+            opacity: 0.5;
+            color: $white-f5f;
+            font-size: 1vw;
+            max-width: 420px;
+            font-weight: 300;
+            line-height: 1.6em;
+
+        }
+
+        .para-container{
+            overflow: hidden;
+        }
+
+        .para{
+            margin-top: 3.5rem;
+
+        }
+        .end-text{
+            max-width: 100%;
+            padding:2rem 0  ;
+            margin-left: 1rem;
+            margin-top: 4rem;
+            border-top:1px solid $white-3d4 !important;
+            z-index: 10;
+            overflow: hidden;
+        }
+
+    }
+    .image-container{
+        z-index: 10;
+    }
+}

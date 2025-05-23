@@ -1,0 +1,60 @@
+@import '../base/colors';
+
+.section2Wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: $green-222;
+  color:$white-f5f;
+  flex-wrap: wrap;
+  min-width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+
+    .imageContainer {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex: 1;
+    max-width:315px;
+    max-height:100%;
+    overflow: hidden;
+    object-fit: cover;
+  }
+
+  .textContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 40vw;
+    padding: 1rem;
+    text-align: center;
+    overflow: hidden;
+
+    .subheading {
+      font-size: 0.875rem;
+      color: $greay-648;
+    }
+
+    .heading {
+      font-size: 4rem;
+      font-weight: normal;
+      font-family: var(--font-playfair);
+      margin: 2rem 0 3rem 0;
+      color: $white-f5f;
+      line-height: 1.2;
+      letter-spacing: 0.2rem;
+    }
+
+    .description {
+      font-size: 1vw;
+      line-height: 1.6;
+      color: rgba($white-f5f, 0.5);
+
+    }
+  }
+
+}
+
+
+
