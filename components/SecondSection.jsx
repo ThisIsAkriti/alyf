@@ -45,7 +45,7 @@ export default function SecondSection({ containerRef}) {
       );
 
     // Text trigger: Start when SecondSection is fully in view, adjusted by textOffset
-    const textStartScroll = pinStart + 1.65 * V;
+    const textStartScroll = pinStart + 1.7 * V;
     const textEndScroll = pinStart + 2 * V;
 
     const textTl = gsap.timeline({

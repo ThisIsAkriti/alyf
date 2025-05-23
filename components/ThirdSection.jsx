@@ -36,7 +36,7 @@ const ThirdSection = ({ containerRef, horizontalTween }) => {
     });
 
     // Text slide animation 
-    const textStartScroll = pinStart + 2.3 * V;
+    const textStartScroll = pinStart + 2.8 * V;
     const textEndScroll = pinStart + 2.2 * V;
 
     const textTl = gsap.timeline({
@@ -54,7 +54,7 @@ const ThirdSection = ({ containerRef, horizontalTween }) => {
     );
 
     // Image slide animation 
-    const imageStartScroll = pinStart + 2.5 * V;
+    const imageStartScroll = pinStart + 3.1 * V;
     const imageEndScroll = pinStart + 2.5 * V;
 
     const imageTl = gsap.timeline({
